@@ -1,7 +1,7 @@
 #!/bin/bash/
 
 mi_shell=$(echo "ls" -l -a | ./hsh | wc -c);
-shell=$(ls -l -a | sh | wc -c);
+shell=$(echo "ls" -l -a | sh | wc -c);
 
 if [ "${mi_shell}" -eq "${shell}"]; then
     echo "Check 0 - Passed. Output of ls OK";
