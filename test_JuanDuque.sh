@@ -6,4 +6,4 @@ echo $?
 echo "herkas" | sh
 echo "herkas" | ./hsh
 echo "       ls  " | sh
-echo "       ls  " |./hsh
+echo "       ls  " | ./hsh
