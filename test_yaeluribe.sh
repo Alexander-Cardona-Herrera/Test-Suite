@@ -1,7 +1,7 @@
 #!/bin/bash/
 
-mi_shell=$(echo "ls" -a | cat | head | ./hsh);
-shell=$(echo "ls" -a | cat | head | sh);
+mi_shell=$(echo "env" | ./hsh);
+shell=$(echo "env" | sh);
 
 if [ "${mi_shell}" -eq "${shell}"]; then
     echo "Check 0 - Passed. Output of ls OK";
